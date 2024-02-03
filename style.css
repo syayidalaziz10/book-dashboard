@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin-bottom: 5rem;
+  background-image: url("assets/banner.png");
+  background-repeat: no-repeat;
+  display: relative;
+}
+
+.head_bar {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.head_bar__title {
+  font-size: 0.9rem;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.home_section {
+  height: 75vh;
+}
+
+.home_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.home_section > h1 {
+  font-size: 4rem;
+  letter-spacing: -0.2rem;
+}
+
+.home_section > p {
+  font-size: 0.8rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  letter-spacing: -0.1rem;
+  margin-bottom: 2.6rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.input_inline {
+  display: flex;
+  align-items: center;
+}
+
+.inputBook {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.inputButton {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(202, 202, 202);
+  font-size: 1rem;
+}
+
+#bookSubmit {
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 0.5rem;
+  border: 0px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.025rem;
+}
+
+.book_shelt_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book_shelt_header > select {
+  padding: 10px;
+  margin-bottom: 2.6rem;
+  border: 0.025rem solid black;
+  border-radius: 0.25rem;
+}
+
+.book_shelf > table {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+table,
+th,
+td {
+  border: 0.05rem solid rgb(202, 202, 202);
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+th {
+  font-weight: 500;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+h1,
+h2,
+p {
+  opacity: 0.9;
+  text-align: center;
+}
+
+.edit_modal {
+  display: none;
+  position: absolute;
+}
+
+.moveToincompleteBook,
+.moveTocompleteBook,
+.editBook,
+.removeBook {
+  padding: 10px;
+  border: 0;
+  border-radius: 0.25rem;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.moveToincompleteBook {
+  background-color: goldenrod;
+}
+
+.moveTocompleteBook {
+  background-color: cornflowerblue;
+}
+
+.editBook {
+  background-color: green;
+  opacity: 0.8;
+}
+
+.removeBook {
+  background-color: red;
+  opacity: 0.8;
+}
